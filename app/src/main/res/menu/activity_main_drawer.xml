@@ -3,21 +3,21 @@
 
     <group android:checkableBehavior="single">
         <item
-            android:id="@+id/nav_telEmergencias"
-            android:icon="@drawable/perfil"
-            android:title="Import" />
+            android:id="@+id/nav_telemergencias"
+            android:icon="@drawable/telefono"
+            android:title="Teléfonos de Emergencia" />
         <item
-            android:id="@+id/nav_infoPrevent"
-            android:icon="@drawable/ic_menu_gallery"
-            android:title="Gallery" />
+            android:id="@+id/nav_infoprevent"
+            android:icon="@drawable/infoprevent"
+            android:title="Información Preventiva" />
         <item
             android:id="@+id/nav_perfil"
-            android:icon="@drawable/ic_menu_slideshow"
-            android:title="Slideshow" />
+            android:icon="@drawable/perfil"
+            android:title="Perfil" />
         <item
-            android:id="@+id/nav_acercaDe"
-            android:icon="@drawable/ic_menu_manage"
-            android:title="Tools" />
+            android:id="@+id/nav_acercade"
+            android:icon="@drawable/acercade"
+            android:title="Acerca de"/>
     </group>
 
 </menu>
