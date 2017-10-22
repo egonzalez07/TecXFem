@@ -39,11 +39,11 @@ public class Registro extends Fragment {
      *
      * @param param1 Parameter 1.
      * @param param2 Parameter 2.
-     * @return A new instance of fragment Registro.
+     * @return A new instance of fragment telefonos.
      */
     // TODO: Rename and change types and number of parameters
-    public static Registro newInstance(String param1, String param2) {
-        Registro fragment = new Registro();
+    public static telefonos newInstance(String param1, String param2) {
+        telefonos fragment = new telefonos();
         Bundle args = new Bundle();
         args.putString(ARG_PARAM1, param1);
         args.putString(ARG_PARAM2, param2);
@@ -64,7 +64,7 @@ public class Registro extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_registro, container, false);
+        return inflater.inflate(R.layout.fragment_telefonos, container, false);
     }
 
     // TODO: Rename method, update argument and hook method into UI event
@@ -77,8 +77,8 @@ public class Registro extends Fragment {
     @Override
     public void onAttach(Context context) {
         super.onAttach(context);
-        if (context instanceof OnFragmentInteractionListener) {
-            mListener = (OnFragmentInteractionListener) context;
+        if (context instanceof telefonos.OnFragmentInteractionListener) {
+            mListener = (Registro.OnFragmentInteractionListener) context;
         } else {
             throw new RuntimeException(context.toString()
                     + " must implement OnFragmentInteractionListener");

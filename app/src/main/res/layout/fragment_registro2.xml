@@ -15,7 +15,7 @@
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
         tools:layout_constraintTop_creator="1"
         android:layout_marginStart="2dp"
-        android:layout_marginTop="26dp"
+        android:layout_marginTop="17dp"
         app:layout_constraintTop_toBottomOf="@+id/textView97"
         tools:layout_constraintLeft_creator="1"
         app:layout_constraintLeft_toLeftOf="parent"
@@ -41,7 +41,7 @@
         app:layout_constraintLeft_toRightOf="@+id/textView99"
         android:layout_marginLeft="21dp"
         android:layout_marginRight="16dp"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintVertical_bias="0.0" />
 
     <Button
@@ -52,7 +52,7 @@
         android:layout_marginLeft="41dp"
         android:layout_marginRight="41dp"
         android:layout_marginStart="41dp"
-        android:layout_marginTop="17dp"
+        android:layout_marginTop="0dp"
         android:background="?android:attr/textColorSecondaryNoDisable"
         android:textAppearance="@style/TextAppearance.AppCompat.Headline"
         android:textColor="#0c5ba6"
@@ -77,7 +77,7 @@
         tools:layout_constraintBottom_creator="1"
         app:layout_constraintBottom_toBottomOf="parent"
         tools:layout_constraintLeft_creator="1"
-        android:layout_marginBottom="133dp"
+        android:layout_marginBottom="96dp"
         app:layout_constraintLeft_toLeftOf="parent"
         android:layout_marginLeft="2dp" />
 
@@ -97,7 +97,8 @@
         app:layout_constraintLeft_toRightOf="@+id/textView97"
         android:layout_marginLeft="12dp"
         android:layout_marginRight="19dp"
-        app:layout_constraintHorizontal_bias="0.0" />
+        app:layout_constraintHorizontal_bias="0.0"
+        android:layout_marginTop="-11dp" />
 
     <TextView
         android:id="@+id/textView91"
@@ -110,8 +111,8 @@
         tools:layout_constraintLeft_creator="1"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintTop_toTopOf="@+id/editText69"
-        android:layout_marginLeft="2dp"
-        android:layout_marginTop="4dp" />
+        android:layout_marginLeft="-13dp"
+        android:layout_marginTop="0dp" />
 
     <EditText
         android:id="@+id/editText69"
@@ -178,8 +179,8 @@
 
     <TextView
         android:id="@+id/textView85"
-        android:layout_width="0dp"
-        android:layout_height="36dp"
+        android:layout_width="167dp"
+        android:layout_height="30dp"
         android:text="Tipo de Sangre:"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
         android:layout_marginStart="2dp"
@@ -195,7 +196,9 @@
         android:layout_marginBottom="55dp"
         app:layout_constraintLeft_toLeftOf="parent"
         android:layout_marginLeft="2dp"
-        android:layout_marginRight="5dp" />
+        android:layout_marginRight="5dp"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintVertical_bias="1.0" />
 
     <EditText
         android:id="@+id/editText64"
@@ -223,14 +226,14 @@
         app:layout_constraintBottom_toTopOf="@+id/textView85"
         android:layout_marginStart="2dp"
         tools:layout_constraintLeft_creator="1"
-        android:layout_marginBottom="17dp"
+        android:layout_marginBottom="19dp"
         app:layout_constraintLeft_toLeftOf="parent"
         android:layout_marginLeft="2dp" />
 
     <EditText
         android:id="@+id/editText58"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
+        android:layout_width="244dp"
+        android:layout_height="33dp"
         android:ems="10"
         android:inputType="textPersonName"
         tools:layout_constraintTop_creator="1"
@@ -258,7 +261,7 @@
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
         tools:layout_constraintTop_creator="1"
         android:layout_marginStart="2dp"
-        android:layout_marginTop="19dp"
+        android:layout_marginTop="9dp"
         app:layout_constraintTop_toBottomOf="@+id/textView60"
         tools:layout_constraintLeft_creator="1"
         app:layout_constraintLeft_toLeftOf="parent"
@@ -299,7 +302,7 @@
         android:layout_marginLeft="10dp"
         android:layout_marginRight="9dp"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintVertical_bias="0.526" />
 
     <RadioButton
         android:id="@+id/radioButton11"

@@ -3,6 +3,10 @@
 
     <group android:checkableBehavior="single">
         <item
+            android:id="@+id/nav_reporte"
+            android:icon="@mipmap/reporte"
+            android:title="Reporte"/>
+        <item
             android:id="@+id/nav_telemergencias"
             android:icon="@drawable/telefono"
             android:title="Teléfonos de Emergencia" />
