@@ -10,14 +10,12 @@ import android.view.ViewGroup;
 
 
 
-public class InfoPreventiva extends Fragment {
-
+public class telefonos3 extends Fragment {
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_info_preventiva, container, false);
+        return inflater.inflate(R.layout.fragment_telefonos3, container, false);
     }
-
 }

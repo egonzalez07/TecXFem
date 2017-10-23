@@ -2,6 +2,7 @@ package hackatoncentroam.tecxfem;
 
 import android.app.FragmentManager;
 import android.app.FragmentTransaction;
+import android.net.Uri;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -17,7 +18,12 @@ import android.view.Menu;
 import android.view.MenuItem;
 
 public class MainActivity extends AppCompatActivity
-        implements NavigationView.OnNavigationItemSelectedListener {
+        implements NavigationView.OnNavigationItemSelectedListener,
+        reporte5.OnFragmentInteractionListener,
+        telefonos5.OnFragmentInteractionListener,
+        infoPreventiva5.OnFragmentInteractionListener,
+        registro5.OnFragmentInteractionListener
+{
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -53,42 +59,36 @@ public class MainActivity extends AppCompatActivity
         return true;
     }
 
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-        // Handle action bar item clicks here. The action bar will
-        // automatically handle clicks on the Home/Up button, so long
-        // as you specify a parent activity in AndroidManifest.xml.
-        int id = item.getItemId();
-
-        //noinspection SimplifiableIfStatement
-        if (id == R.id.action_settings) {
-            return true;
-        }
-
-        return super.onOptionsItemSelected(item);
-    }
-
     @SuppressWarnings("StatementWithEmptyBody")
     @Override
     public boolean onNavigationItemSelected(MenuItem item) {
         // Handle navigation view item clicks here.
         int id = item.getItemId();
-        Fragment fr = null;
+        Fragment fragment=null;
+        Boolean fragment_selected = false;
         if (id == R.id.nav_reporte) {
-            fr = new telefonos2();
+            fragment= new reporte5();
+            fragment_selected=true;
         } else if (id == R.id.nav_telemergencias) {
-            fr = new telefonos2();
+            fragment= new telefonos5();
+            fragment_selected=true;
         } else if (id == R.id.nav_infoprevent) {
-            fr = new registro2();
+            fragment= new infoPreventiva5();
+            fragment_selected=true;
+        }else if(id == R.id.nav_perfil){
+            fragment= new registro5();
+            fragment_selected=true;
         }
-
-        android.support.v4.app.FragmentManager manager = getSupportFragmentManager();
-        android.support.v4.app.FragmentTransaction transaction = manager.beginTransaction();
-        transaction.replace(R.id.panelTecXFem,fr);
-        transaction.commit();
-
+        if(fragment_selected){
+            getSupportFragmentManager().beginTransaction().replace(R.id.panelTecXFem,fragment).commit();
+        }
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);
         return true;
+    }
+
+    @Override
+    public void onFragmentInteraction(Uri uri) {
+
     }
 }
